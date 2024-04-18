@@ -1,3 +1,9 @@
+#' Deseasonalize a column in a dataframe
+#'
+#' @param data A column with numerical data
+#'
+#' @importFrom seasonal seas
+#' @export
 deseasonalize <- function(data) {
   data_sa <- data |>
     base::log() |>
