@@ -4,10 +4,10 @@
 #'
 #' @importFrom seasonal seas
 #' @export
-deseasonalize <- function(data) {
+deseasonalize <- function(data, .start = c(2003, 1), .frequency = 12) {
   data_sa <- data |>
     base::log() |>
-    stats::ts(start = base::c(2003, 1), frequency = 12) |>
+    stats::ts(start = .start, frequency = .frequency) |>
     seasonal::seas() |>
     stats::predict() |>
     base::exp()
