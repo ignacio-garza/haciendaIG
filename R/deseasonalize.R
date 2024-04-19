@@ -1,6 +1,8 @@
 #' Deseasonalize a column in a dataframe
 #'
 #' @param data A column with numerical data
+#' @param .start Argument passed to seas function
+#' @param .frequency Argument passed to seas function
 #'
 #' @importFrom seasonal seas
 #' @export
