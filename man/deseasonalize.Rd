@@ -4,7 +4,7 @@
 \alias{deseasonalize}
 \title{Deseasonalize a column in a dataframe}
 \usage{
-deseasonalize(data, .start = c(2003, 1), .frequency = 12)
+deseasonalize(data, .start = c(2003, 1), .frequency = 12, ...)
 }
 \arguments{
 \item{data}{A column with numerical data}
@@ -12,6 +12,8 @@ deseasonalize(data, .start = c(2003, 1), .frequency = 12)
 \item{.start}{Argument passed to seas function}
 
 \item{.frequency}{Argument passed to seas function}
+
+\item{...}{Arguments passed to seas from seasonal}
 }
 \description{
 Deseasonalize a column in a dataframe
