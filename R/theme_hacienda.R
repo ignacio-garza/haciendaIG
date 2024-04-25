@@ -33,7 +33,7 @@ theme_hacienda <- function(legend.position = "top") {
 }
     # Edición de grosor de linea
 
-    plot(x, y, type = "l", lwd = 2) #Cambiar a 3 si se requiere que el grosor sea mayor y sustituir "x" y "y" con los datos
+    plot(x, y, type = "l", lwd = 2) #Cambiar a 3 o 4 si se requiere que el grosor sea mayor y sustituir "x" y "y" con los datos
 
 
 
